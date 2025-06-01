@@ -1,8 +1,8 @@
 print("Input two numbers at a time")
 num1 = int(input("Enter the first number: "))
 num2= int(input("Enter the second number: "))
-type_of_operation = input("Choose the operation (+, -, *, /): ")
-match type_of_operation:
+operation = input("Choose the operation (+, -, *, /): ")
+match operation:
     case "+":
      result = num1 + num2
      print(f"The result is {result}")

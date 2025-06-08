@@ -13,4 +13,4 @@ def  calculate_future_date():
          formatted = future_date.strftime("%Y-%m-%d")
          print(f"Future Date:", formatted)
      except ValueError:
-        print("please enter a valid integer for number for number of days")
+        print("Enter the number of days to add to the current date:")

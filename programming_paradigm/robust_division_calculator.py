@@ -1,4 +1,4 @@
-def safe_divide (numerator, denominator):
+def safe_divide (numerator= 5, denominator =5 ):
     try:
         numerator = float(numerator)
         denominator = float(denominator)
@@ -8,5 +8,6 @@ def safe_divide (numerator, denominator):
         return "Error: Cannot divide by zero."
     except ValueError:
         return "Error: Please enter numeric values only."
+print(safe_divide())
 
 

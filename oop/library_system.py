@@ -8,8 +8,8 @@ class Book:
         return f'"{self.title}" by {self.author}'
         
 class EBook(Book):
-    def __init__(self, title:str, author:str, file_size: int):
-        super().__init__(self, title, author) # Initialize parent attributes
+    def __init__(self, title:str, author:str, file_size:int):
+        super().__init__(title, author) # Initialize parent attributes
         self.file_size = file_size    # Child-specific attribute
         
     def __str__(self):
@@ -17,7 +17,7 @@ class EBook(Book):
       
 class PrintBook(Book):
     def __init__(self, title:str, author:str, page_count:int):
-        super().__init__(self, title, author)
+        super().__init__(title, author)
         self.page_count = page_count
         
     def __str__(self):

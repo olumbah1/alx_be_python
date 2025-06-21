@@ -3,9 +3,16 @@ class Book:
     def __init__(self, title:str, author:str):
         self.title = title
         self.author = author
-         
+        
+    def info(self):
+        # Core info without "Book:"
+        return f'{self.title} by {self.author}'
+
     def __str__(self):
-        return f'Book: {self.title} by {self.author}'
+        # String for Book itself includes "Book:"
+        return f'Book: {self.info()}'
+    # def __str__(self):
+    #     return f' {self.title} by {self.author}'
         
 class EBook(Book):
     def __init__(self, title:str, author:str, file_size:int):
